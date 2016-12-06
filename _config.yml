@@ -1,0 +1,10 @@
+# Site settings
+title: Toby Osbourn – London based Ruby and JavaScript consultant
+email: toby.osbourn@gmail.com
+description: Personal Site of Toby Osbourn – London based Ruby and JavaScript consultant
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://tosbourn.com" # the base hostname & protocol for your site
+permalink: /:title/
+
+# Build settings
+markdown: kramdown

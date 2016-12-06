@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+html {
+  background: -webkit-linear-gradient(top, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.02) 50%, rgba(255, 255, 255, 0.02) 61%, rgba(0, 0, 0, 0.02) 73%), -webkit-linear-gradient(57deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background: linear-gradient(to bottom, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), linear-gradient(to bottom, rgba(0, 0, 0, 0.02) 50%, rgba(255, 255, 255, 0.02) 61%, rgba(0, 0, 0, 0.02) 73%), linear-gradient(33deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background-blend-mode: normal,color-burn;
+  min-height: 100%;
+}
+
+.box {
+  background: white;
+  max-width: 700px;
+  margin: 2em auto;
+  font-size: 2em;
+  padding: 1em;
+  border-radius: 45px;
+  box-shadow: 20px 20px 49px 0px rgba(0,0,0,0.75);
+  font-family: 'Courgette', cursive;
+}
+
+footer.box {
+  font-size: 1.7em;
+  box-shadow: none;
+  margin-bottom: 1em;
+}
+
+a, a:visited, a:focus {
+  color: purple;
+}
+
+em {
+  color: red;
+  font-style: normal;
+}
+
+label {
+  margin-top: 1em;
+  display: inline-block;
+}
+
+input {
+  font-family: 'Courgette', cursive;
+  font-size: 1em;
+  width: 100%;
+  line-height: 2em;
+}
+
+input[type=submit] {
+  height: 2.3em;
+  line-height: 2.3em;
+  font-size: 1em;
+  background: #cc70cc;
+  margin: 1em auto;
+  border: none;
+  border-radius: 45px;
+}
