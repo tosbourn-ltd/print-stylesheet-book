@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Print Stylesheets The Book</title>
+    <style>
+      {% include style.min.css %}
+    </style>
+  </head>
+  <body>
+    <h1 class="box">
+      <span class="title-main">Print Stylesheets</span>
+      <span class="title-subtitle">The Book!</span>
+    </h1>
+    {{ content }}
+
+    <footer class="box">
+      Copyright <a href="http://tosbourn.com">tosbourn ltd</a>.
+    </footer>
+  </body>
+</html>
