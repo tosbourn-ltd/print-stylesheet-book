@@ -126,6 +126,17 @@
   }
 
   .linkedin:visited { color: #FFF; }
+
+}
+
+@media screen and (max-width: 675px) {
+  .title-main, .title-subtitle {
+    width: 100%;
+    text-align: left;
+  }
+  .title-main {
+    font-size: 1.5em;
+  }
 }
 
 
