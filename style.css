@@ -103,7 +103,7 @@
     text-decoration: none;
     flex-grow: 1;
     text-align: center;
-    width: 135px;
+    min-width: 135px;
   }
 
   .facebook {
