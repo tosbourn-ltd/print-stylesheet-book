@@ -90,4 +90,82 @@
     display: inline-block;
     width:20%;
   }
+
+  .socialshares {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .social {
+    padding: 1%;
+    display: inline-block;
+    margin: 0 1.5% 1.5% 0;
+    text-decoration: none;
+    flex-grow: 1;
+    text-align: center;
+    width: 135px;
+  }
+
+  .facebook {
+    background-color: #3C5A98;
+    color: #FFFFFF;
+  }
+
+  .facebook:visited { color: #FFF; }
+
+  .twitter {
+    background-color: #DBF7F8;
+    color: #2D6491;
+  }
+
+  .twitter:visited { color: #2D6491; }
+
+  .linkedin {
+    background-color: #185C80;
+    color: #FFF;
+  }
+
+  .linkedin:visited { color: #FFF; }
+}
+
+
+
+@media print {
+  .socialshares,
+  form {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+  }
+
+  a:visited {
+    color: black;
+  }
+
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-weight: normal;
+  }
+
+  a[href^="mailto"]:after {
+    content: " (toby.osbourn@gmail.com)";
+    font-weight: normal;
+  }
+
+  .title-subtitle:before {
+    content: " – ";
+  }
+
+  main:after {
+    content: "Obviously you can't sign up from a printed page (well done for testing though! Please sign up over at http://printstylesheets.com 😘)";
+  }
+
+  @page {
+    margin: 2cm;
+  }
+
 }
