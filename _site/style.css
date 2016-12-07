@@ -169,3 +169,13 @@
   }
 
 }
+
+@media speech {
+  .box p:first {
+    pause-before: 40ms;
+  }
+
+  li {
+    pause-before: 40ms;
+  }
+}
