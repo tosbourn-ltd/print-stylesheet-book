@@ -15,7 +15,7 @@
     font-size: 2em;
     padding: 1em;
     border-radius: 45px;
-    box-shadow: 20px 20px 49px 0px rgba(0,0,0,0.75);
+    box-shadow: 20px 20px 49px 0px rgba(0,0,0,0.3);
   }
 
   footer.box {
@@ -26,6 +26,7 @@
 
   a, a:visited, a:focus {
     color: purple;
+    text-decoration-skip: ink;
   }
 
   em {
@@ -50,11 +51,12 @@
     height: 2.3em;
     line-height: 2.3em;
     font-size: 1em;
-    background: #cc70cc;
+    background: #66CCFF;
     margin: 1em auto;
     border: none;
     border-radius: 45px;
     font-family: 'Montserrat', sans-serif;
+    box-shadow: 20px 20px 49px 0px rgba(0,0,0,0.1);
   }
 
   h1.box {
