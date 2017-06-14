@@ -1,5 +1,5 @@
 PATH
-  remote: ~/Projects/jekyll-sitemap
+  remote: ../jekyll-sitemap
   specs:
     jekyll-sitemap (0.12.0)
       jekyll (~> 3.3)
@@ -68,4 +68,4 @@ DEPENDENCIES
   unidecode
 
 BUNDLED WITH
-   1.13.3
+   1.14.6

@@ -47,5 +47,15 @@
       ga('send', 'pageview');
 
     </script>
+    <script>
+      var downloadLink = document.getElementById('submit_btn');
+      addListener(downloadLink, 'click', function() {
+        ga('send', 'event', 'preorder-button', 'click', 'nav-buttons');
+      });
+      function addListener(element, type, callback) {
+       if (element.addEventListener) element.addEventListener(type, callback);
+       else if (element.attachEvent) element.attachEvent('on' + type, callback);
+      }
+    </script>
   </body>
 </html>
