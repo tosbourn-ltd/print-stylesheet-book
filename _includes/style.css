@@ -287,6 +287,10 @@
   .lead {
     font-size: 1.25rem;
   }
+  .homepage-link {
+    color: rgb(26,26,26) !important;
+    text-decoration: none !important;
+  }
 }
 
 @media screen and (max-width:675px) {
