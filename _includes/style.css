@@ -326,7 +326,7 @@
     font-weight: 400
   }
   a[href^=mailto]:after {
-    content: " (toby.osbourn@gmail.com)";
+    content: " (toby@tosbourn.com)";
     font-weight: 400
   }
   main:after {
