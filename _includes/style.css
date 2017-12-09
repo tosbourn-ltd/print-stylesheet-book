@@ -1,194 +1,347 @@
-@import url('https://fonts.googleapis.com/css?family=Courgette|Montserrat');
 @media screen {
-  html {
-    background: -webkit-linear-gradient(top, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.02) 50%, rgba(255, 255, 255, 0.02) 61%, rgba(0, 0, 0, 0.02) 73%), -webkit-linear-gradient(57deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
-    background: linear-gradient(to bottom, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), linear-gradient(to bottom, rgba(0, 0, 0, 0.02) 50%, rgba(255, 255, 255, 0.02) 61%, rgba(0, 0, 0, 0.02) 73%), linear-gradient(33deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
-    background-blend-mode: normal,color-burn;
-    min-height: 100%;
-  }
-
-  .box {
-    font-family: 'Montserrat', sans-serif;
-    background: white;
-    max-width: 700px;
-    margin: 2em auto;
-    font-size: 2em;
-    padding: 1em;
-    border-radius: 45px;
-    box-shadow: 20px 20px 49px 0px rgba(0,0,0,0.3);
-  }
-
-  footer.box {
-    font-size: 1.7em;
-    box-shadow: none;
-    margin-bottom: 1em;
-  }
-
-  a, a:visited, a:focus {
-    color: purple;
-    text-decoration-skip: ink;
-  }
-
-  em {
-    color: red;
-    font-style: normal;
+  body {
+    font-family: Montserrat, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    font-weight: 300;
   }
 
   label {
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 1em;
-    display: inline-block;
+    font-family: Montserrat, sans-serif
+  }
+  label {
+    display: inline-block
+  }
+  html {
+    background: -webkit-linear-gradient(top, #D5DEE7 0, #E8EBF2 50%, #E2E7ED 100%), -webkit-linear-gradient(top, rgba(0, 0, 0, .02) 50%, rgba(255, 255, 255, .02) 61%, rgba(0, 0, 0, .02) 73%), -webkit-linear-gradient(57deg, rgba(255, 255, 255, .2) 0, rgba(0, 0, 0, .2) 100%);
+    background: linear-gradient(to bottom, #D5DEE7 0, #E8EBF2 50%, #E2E7ED 100%), linear-gradient(to bottom, rgba(0, 0, 0, .02) 50%, rgba(255, 255, 255, .02) 61%, rgba(0, 0, 0, .02) 73%), linear-gradient(33deg, rgba(255, 255, 255, .2) 0, rgba(0, 0, 0, .2) 100%);
+    background-blend-mode: normal, color-burn;
+    min-height: 100%
+  }
+  a,
+  a:focus,
+  a:visited {
+    color: #ff8c00;
+    text-decoration: none;
+    text-decoration-skip: ink
   }
 
+  a:hover {
+    color: #ef8402;
+    text-decoration: underline;
+  }
+  em {
+      font-style: normal
+  }
+  form {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  label {
+      margin-top: 1em
+  }
   input {
-    font-family: 'Courgette', cursive;
     font-size: 1em;
     width: 100%;
     line-height: 2em;
+    border: 1px solid #ccc;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
   }
-
   input[type=submit] {
-    height: 2.3em;
-    line-height: 2.3em;
     font-size: 1em;
-    background: #66CCFF;
+    background: #ff8c00;
     margin: 1em auto;
     border: none;
     border-radius: 45px;
-    font-family: 'Montserrat', sans-serif;
-    box-shadow: 20px 20px 49px 0px rgba(0,0,0,0.1);
+    font-family: Montserrat, sans-serif;
+    color: #fff;
   }
-
-  h1.box {
+  input[type=submit]:hover,
+  input[type=submit]:focus {
+    background-color: #ef8402;
+  }
+  h1 {
     text-align: center;
-    font-size: 2em;
-    font-family: 'Courgette', cursive;
+    font-size: 2.5em;
+    margin-bottom: 0;
   }
-
+  h2 {
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 3rem;
+  }
+  h2:before {
+    content: "";
+    display: block;
+    width: 4rem;
+    height: 4px;
+    background-color: #f2f2f2;
+    margin: 1rem auto 2rem;
+  }
   ul {
     margin: 0;
     list-style: none;
     padding: 0;
   }
-
   li {
-    margin-bottom: 0.7em;
+    margin-bottom: .7em
   }
-
-  li:before {
+  main li:before {
     content: '🖨';
-    margin-right: 0.7em;
+    margin-right: .7em;
   }
-
-  .title-main {
-    font-size: 3em;
-    display: inline-block;
-    width: 75%;
-    text-align: left;
-  }
-
-  .title-subtitle {
-    font-size: 1em;
-    display: inline-block;
-    width:20%;
+  main {
+    margin-top: 3rem;
   }
 
   .socialshares {
     display: flex;
     flex-wrap: wrap;
+    margin: 2rem 0 0;
   }
 
   .social {
-    padding: 1%;
+    padding: 1rem;
     display: inline-block;
     margin: 0 1.5% 1.5% 0;
-    text-decoration: none;
     flex-grow: 1;
+    width: 135px;
+    transition: all 0.2s;
+    border-radius: 100px;
     text-align: center;
-    min-width: 135px;
   }
 
-  .facebook {
+  .social:hover {
+    color: #fff;
+    opacity: 0.8;
+  }
+
+  .social img {
+    display: inline-block;
+    height: 2rem;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+  }
+
+  .social__text {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .facebook,
+  .facebook:visited,
+  .facebook:focus {
     background-color: #3C5A98;
-    color: #FFFFFF;
+    color: #fff;
   }
 
-  .facebook:visited { color: #FFF; }
-
-  .twitter {
-    background-color: #DBF7F8;
-    color: #2D6491;
+  .twitter,
+  .twitter:visited,
+  .twitter:focus {
+    background-color: #55acee;
+    color: #fff;
   }
 
-  .twitter:visited { color: #2D6491; }
-
-  .linkedin {
-    background-color: #185C80;
-    color: #FFF;
+  .linkedin,
+  .linkedin:visited,
+  .linkedin:focus {
+    background-color: #007ab9;
+    color: #fff;
   }
 
-  .linkedin:visited { color: #FFF; }
+  .container {
+    position: relative;
+    width: 88.5%;
+    max-width: 50rem;
+    margin: 3rem auto;
+    padding: 3rem;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+  }
 
+  .ribbon-wrapper {
+    width: 135px;
+    height: 138px;
+    overflow: hidden;
+    position: absolute;
+    top: -6px;
+    right: -6px;
+  }
+
+  .ribbon {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: rgba(0,0,0,0.2) 0px 1px 0px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform:    rotate(45deg);
+    -ms-transform:     rotate(45deg);
+    -o-transform:      rotate(45deg);
+    position: relative;
+    padding: 7px 0;
+    left: 10px;
+    top: 27px;
+    width: 160px;
+    background-color: #ff8c00;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ff8c00), to(#ef8402));
+    background-image: -webkit-linear-gradient(top, #ff8c00, #ef8402);
+    background-image:    -moz-linear-gradient(top, #ff8c00, #ef8402);
+    background-image:     -ms-linear-gradient(top, #ff8c00, #ef8402);
+    background-image:      -o-linear-gradient(top, #ff8c00, #ef8402);
+    color: #fff;
+    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+    box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+  }
+
+  .ribbon:before,
+  .ribbon:after {
+    content: "";
+    border-top:   3px solid #a55c02;
+    border-left:  3px solid transparent;
+    border-right: 3px solid transparent;
+    position:absolute;
+    bottom: -3px;
+  }
+
+  .ribbon:before {
+    left: 0;
+  }
+
+  .ribbon:after {
+    right: 0;
+  }
+
+  .logo {
+    display: block;
+    width: 3rem;
+    margin: 0 auto 16px;
+    transition: all 0.2s;
+  }
+
+  .logo:hover {
+    margin-top: -5px;
+    margin-bottom: 21px;
+  }
+
+  .footer {
+    display: block;
+    position: relative;
+    width: 88.5%;
+    max-width: 50rem;
+    margin: 3rem auto;
+    padding: 3rem;
+    box-sizing: border-box;
+  }
+
+  .footer__small {
+    font-size: 0.875rem;
+  }
+
+  .footer-social {
+    list-style: none;
+    margin-left: 0;
+    text-align: right;
+  }
+
+  .footer-social li {
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
+
+  .footer-social li:last-child {
+    margin-right: 0;
+  }
+
+  .footer-social img {
+    height: 1.5rem;
+  }
+
+  .footer-social li a:hover img  {
+    opacity: 0.8;
+  }
+
+  .l-grid {
+    margin-left: -2.5%;
+  }
+
+  .l-grid__item-half {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 2.5%;
+    width: 47.5%;
+  }
+  .va-m {
+    vertical-align: middle;
+  }
+
+  .book {
+    width: 100%;
+  }
+  .lead {
+    font-size: 1.25rem;
+  }
+  .homepage-link {
+    color: rgb(26,26,26) !important;
+    text-decoration: none !important;
+  }
 }
 
-@media screen and (max-width: 675px) {
-  .title-main, .title-subtitle {
-    width: 100%;
+@media screen and (max-width:675px) {
+  .l-grid__item-half {
+  display: inline-block;
+  vertical-align: top;
+  width: 97.5%;
+  margin-left: 2.5%;
+  }
+  .footer-social {
     text-align: left;
   }
-  .title-main {
-    font-size: 1.5em;
-  }
 }
 
-
-
 @media print {
-  .socialshares,
-  form {
-    display: none;
+  a,
+  a:visited {
+    color: #000
   }
-
+  .socialshares,
+  form,
+  footer,
+  .book,
+  .ribbon {
+    display: none
+  }
   a {
     text-decoration: none;
-    font-weight: bold;
-    color: black;
+    font-weight: 700
   }
-
-  a:visited {
-    color: black;
-  }
-
-  a[href^="http"]:after {
+  a[href^=http]:after {
     content: " (" attr(href) ")";
-    font-weight: normal;
+    font-weight: 400
   }
-
-  a[href^="mailto"]:after {
-    content: " (toby.osbourn@gmail.com)";
-    font-weight: normal;
+  a[href^=mailto]:after {
+    content: " (toby@tosbourn.com)";
+    font-weight: 400
   }
-
-  .title-subtitle:before {
-    content: " – ";
-  }
-
   main:after {
-    content: "Obviously you can't sign up from a printed page (well done for testing though! Please sign up over at http://printstylesheets.com 😘)";
+    content: "Obviously you can't sign up from a printed page (well done for testing though! Please sign up over at http://printstylesheets.com 😘)"
   }
-
   @page {
-    margin: 2cm;
+    margin: 2cm
   }
-
 }
 
 @media speech {
-  .box p:first {
-    pause-before: 40ms;
+  p:first {
+    pause-before: 40ms
   }
-
   li {
-    pause-before: 40ms;
+    pause-before: 40ms
   }
 }
