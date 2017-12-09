@@ -311,7 +311,10 @@
     color: #000
   }
   .socialshares,
-  form {
+  form,
+  footer,
+  .book,
+  .ribbon {
     display: none
   }
   a {
